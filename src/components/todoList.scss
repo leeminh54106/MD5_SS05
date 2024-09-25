@@ -1,0 +1,90 @@
+
+.heading {
+  background: linear-gradient(45deg, #3bb0ee, #ff4287);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  margin-bottom: 16px;
+}
+
+.btn-primary, .btn-danger, .btn-warning {
+  color: #fff;
+  opacity: 1;
+  border: 1px solid transparent;
+  outline: none;
+  min-width: 70px;
+
+  &:hover {
+    color: #fff !important;
+    opacity: 0.7 !important;
+    border: 1px solid transparent !important;
+    outline: none !important;
+  }
+}
+
+.btn-primary {
+  background-color: #1c92d2;
+  &:hover {
+    background-color: #1c92d2 !important;
+  }
+}
+
+.btn-warning {
+  background-color: #FDC830;
+ 
+  &:hover {
+    background-color: #FDC830 !important;
+  }
+}
+
+.btn-danger {
+  background-color: #ff5e62;
+  
+  &:hover {
+    background-color: #ff5e62 !important;
+  }
+}
+
+.jobList {
+  border: 1px solid transparent;
+  border-radius: 6px;
+  list-style: none;
+  margin: 0;
+  padding: 15px 0 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.error-description {
+  margin: 0;
+ position: absolute;
+ top: 110%;
+  font-size: 14px;
+  font-weight: 400;
+  color: #df1a3b;
+  animation: fadeIn 0.4s linear;
+}
+
+.complete {
+  font-size: 15px;
+  font-weight: 500;
+  color: #373B44;
+}
+
+.complete-job {
+  margin-left: 12px;
+  font-size: 16px;
+  color: #2ebf91;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0; 
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1; 
+  }
+}
